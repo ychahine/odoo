@@ -29,6 +29,7 @@
         'google_gmail',
     ],
     'data': [
+        'security/ir_mail_server_rules.xml',
         'views/res_company_views.xml',
         'views/ir_mail_server_views.xml',
         'views/res_config_settings_views.xml',
