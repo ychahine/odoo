@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="res_config_settings_view_form_inherit_hide_gmail" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.hide.gmail</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="google_gmail.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='gmail_client_identifier']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//div[@id='gmail_client_secret']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
