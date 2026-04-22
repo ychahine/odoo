@@ -36,6 +36,8 @@
     ],
     'images': ['static/description/banner.png'],
     'license': 'LGPL-3',
+    'price': 50,
+    'currency': 'EUR',
     'installable': True,
     'application': False,
     'auto_install': False,
