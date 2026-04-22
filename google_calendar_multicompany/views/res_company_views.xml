@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- Vue Société -->
+    <record id="google_calendar_company_form_inherit" model="ir.ui.view">
+        <field name="name">google.caledar.company.form.inherit</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <page name="branches" position="after">
+                <page name="google_calendar_credentials" string="Configuration Google Calendrier">
+                    <group>
+                        <group>
+                            <field name="google_calendar_client_id" placeholder="Client ID de votre compte Google"/>
+                            <field name="google_calendar_client_secret" password="True" placeholder="Code Secret de votre compte Google"/>
+                            <field name="cal_sync_paused"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>
